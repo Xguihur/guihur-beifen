@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">按钮</button>
+    <script>
+      // const obj = {
+      //   name: 'guihur'
+      // }
+
+      // const arr = [1, 2, 3]
+      // const func = () => {
+      //   console.log(1)
+      // }
+      // const obj2 = {}
+      // const map = new Map()
+      // map.set('name', 'guihur')
+      // const number = 123456
+
+      // // 1. 实际上用的用的就是 Object 的toString ，其他比如数组、函数的 toString 都被重写了，使用 Object 原生的就能够有返回类型的功能
+      // // 2. 因为 toString 也是一个函数，所以它的 call 方法是这个函数的原型链上的，即它的 __proto__,也就是 Function.prototype 上的
+      // const type1 = Object.prototype.toString.call(obj)
+      // const type2 = Object.prototype.toString.call(arr)
+      // const type3 = Object.prototype.toString.call(func)
+      // const type4 = arr.toString()
+
+      // console.log(type1)
+      // console.log(type2)
+      // console.log(type3)
+      // console.log(type4)
+      // console.log(Object.prototype)
+      // console.log(obj2.__proto__.toString === Object.prototype.toString) //true
+      // console.log(Object.prototype.toString.call === func.__proto__.call) //true
+      // console.log(Object.prototype.toString.call === Function.prototype.call) //true
+      // console.log(Function.prototype.toString)
+      // console.log(map)
+      // console.log(Object.prototype.toString.call(map))
+      // console.log(func.toString())
+      // console.log(number.toString())
+      // console.log(number)
+
+      // 重复声明let与const
+      // let num1 = 123
+      // const num2 = 123
+      // let func = function () {
+      //   let num1 = 666
+      //   const num2 = 777
+      //   console.log(num2)
+      // }
+      // func()
+      // 迭代器
+      // let arr = [0, 2, 3, 4]
+      // let index = 0
+      // const obj = {
+      //   next() {
+      //     if (index < arr.length) {
+      //       return { value: arr[index++], done: false }
+      //     } else {
+      //       return { value: undefined, done: true }
+      //     }
+      //   }
+      // }
+      // console.log(obj.next())
+      // console.log(obj.next())
+      // console.log(obj.next())
+      // console.log(obj.next())
+      // console.log(obj.next())
+      // 节流:等待异步任务执行完毕才能再进行下一次异步
+      // let flag = false
+      // const throle = () => {
+      //   if (!flag) {
+      //     flag = true
+      //     setTimeout(() => {
+      //       console.log(666)
+      //       flag = false
+      //     }, 5000)
+      //   }
+      // }
+      // const btn = document.getElementById('btn')
+      // btn.addEventListener('click', throle)
+      // 迭代器
+      // const list = [7, 3, 4, 6, 4, 12]
+      // let index = 0
+      // const obj = {
+      //   next() {
+      //     if (index < list.length) {
+      //       return { value: list[index++], done: false }
+      //     } else {
+      //       return { value: undefined, done: true }
+      //     }
+      //   }
+      // }
+      // console.log(obj.next())
+      // console.log(obj.next())
+      // console.log(obj.next())
+      // console.log(obj.next())
+      // console.log(obj.next())
+      // console.log(obj.next())
+      // console.log(obj.next())
+    </script>
+  </body>
+</html>
